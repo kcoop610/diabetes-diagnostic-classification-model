@@ -93,6 +93,24 @@ Best model's coefficients:
 <img src='./images/svm_coefs.jpg'>
 
 
+
+## Recommendations:
+
+The model as-is can be used to target outreach, advertisement, and investment in preventative care, social determinants of health, health & wellness, and health literacy programs.
+
+Recommendations:
+- Target older or aging populations. 
+    - Per the CDC, Type 2 diabetes most often develops in people over age 45. The model observed a similar pattern.
+    
+- Target individuals with rising BMI, waist circumference, and average heart rates.
+    - Observing a rise in these 3 body measurements may be a good indicator of a person’s rising risk of diabetes.
+    
+- Consult with subject matter experts before using sensitive information such as race to target populations.
+    - While this should not be considered a causal relationship, the model observed that black individuals are more likely to have diabetes and white individuals are less likely to have diabetes.  There are many underlying factors not captured in this analysis that may be more direct predictors
+
+**This model should not be used in place of physician advice and care plans.**
+
+
 ## Model Limitations:
 
 - Coefficients represent observed relationships of a relatively small sample and should not be considered causal. There are countless factors that influence a person's health such as family history, living environment, and many more.
@@ -103,13 +121,14 @@ Best model's coefficients:
 
 
 
-## Next Steps & Future Enhancements:
+## Future Enhancements:
 
-The model as-is can be used immediately to target outreach, advertisement, and investment in preventative care, social determinants of health, health & wellness, and health literacy programs. This model should **not** be used in place of physician advice and care plans.
-
-Future enhancements:
 - Add samples to training set to improve performance.
+
+- Conduct additional analysis with subject matter experts to consider the underlying reasons for some observations such as the correlation between race and diagnosis.
+
 - Create a multivariate classifier to differentiate between prediabetes and diabetes.
+
 - Incorporate time-series using data from prior year NHANES.
 
 
