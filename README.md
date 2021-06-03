@@ -73,10 +73,13 @@ The maximum recall scores across all models is consistently around .75-.8, meani
 
 The best performing models resulted in between **8.5-9.5% false negatives**, or diabetics who were incorrectly predicted to be healthy.
 
-The highest accuracy scores are consistently between .71 and .76, indicating that **the model predicts the correct diagnosis about 71-76% of the time.**
+The highest accuracy scores are consistently between .73 and .76, indicating that **the model predicts the correct diagnosis about 73-76% of the time.**
 
-Best model's performance:
-<img src='./images/evaluate_classifier(svm).jpg'>
+Best model performance:
+<img src='./images/evaluate_classifier(bagtree_clf2).jpg'>
+
+Feature importance:
+<img src='./images/feature_importance_bagged_trees.jpg'>
 
 
 
@@ -89,7 +92,7 @@ Positive coefficients indicate the feature has a positive relationship with diag
 Negative coefficients indicate the features has a negative relationship with diagnosis. As the feature value increases, the probability of a diabetes diagnosis decreases.
 
 
-Best model's coefficients:
+Best model coefficients:
 <img src='./images/svm_coefs.jpg'>
 
 
@@ -146,13 +149,16 @@ For any additional questions, please contact kcoop610@gmail.com.
 
 ├── README.md            
 ├── report.ipynb           
-├── presentation.pdf    
+├── presentation2.pdf    
 └── images
     └── images              
 └── data
     └── 11 .xpt data files from NHANES
 └── styles
     └── custom.css 
+└── pdfs
+    └── repo.pdf
+    └── report.pdf
  
 
 ```
